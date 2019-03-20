@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">WDP2018-11-Project</string>
+    <string name="app_name">KKU WE DO IT!</string>
+    <string-array name="credit">
+        <item>All Event</item>
+        <item>Credit: 1</item>
+        <item>Credit: 2</item>
+        <item>Credit: 3</item>
+        <item>Credit: 4</item>
+        <item>Credit: 5</item>
+    </string-array>
+
+    <string name="header">ADD EVENT EXPLICIT</string>
+    <string name="button">Add Event!</string>
+    <string name="name">ex. โครงการทำบุญบ้านเด็กกำพร้า</string>
+    <string name="date">ex. 19/03/2562</string>
+    <string name="place">ex. อาคาร 50 ปี</string>
+    <string name="phone">ex. 080-3205554</string>
 </resources>
