@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KKU We Do It</string>
+    <string name="loginTxt2">เข้าสู่ระบบ</string>
+    <string name="logoutTxt">ออกจากระบบ</string>
+    <string name="aboutTxt">เกี่ยวกับ</string>
+    <string name="contactTxt">ติดต่อผู้พัฒนา</string>
+    <string name="newsTxt">ข่าวสาร</string>
+    <string name="mainpageTxt">หน้าหลัก</string>
+    <string name="guessLoginTxt">เข้าใช้งานด้วยผู้ใช้ทั่วไป</string>
+
+    <string name="JAN">ม.ค.</string>
+    <string name="FEB">ก.พ.</string>
+    <string name="MAR">มี.ค.</string>
+    <string name="APR">เม.ย.</string>
+    <string name="MAY">พ.ค.</string>
+    <string name="JUN">มิ.ย.</string>
+    <string name="JUL">ก.ค.</string>
+    <string name="AUG">ส.ค.</string>
+    <string name="SEP">ก.ย.</string>
+    <string name="OCT">ต.ค.</string>
+    <string name="NOV">พ.ย.</string>
+    <string name="DEC">ธ.ค.</string>
+</resources>

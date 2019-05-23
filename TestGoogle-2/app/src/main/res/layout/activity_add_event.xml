@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventActivity"
+    android:background="@drawable/welcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/title_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/desc_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/dateSt_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date Start"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/dateEn_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date End"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/timeSt_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time Start"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/timeEn_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time End"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/place_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place"/>
+
+        <EditText
+            android:id="@+id/img_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Image Link"/>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:background="@drawable/btn_rounded"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </LinearLayout>
+
+</LinearLayout>

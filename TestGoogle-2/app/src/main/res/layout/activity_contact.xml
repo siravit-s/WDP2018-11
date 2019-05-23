@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity"
+    android:orientation="vertical"
+    android:background="@drawable/welcome"
+    android:fontFamily="@font/itim"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/toolbarMain"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contractTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:text="Contract Us"
+            android:textColor="@color/primary"
+            android:textSize="50sp"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/contractTitle"
+            android:background="@drawable/tv_rounded2">
+
+            <EditText
+                android:id="@+id/sendmail_sub_et"
+                style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/itim"
+                android:hint="Subject"
+                />
+
+            <EditText
+                android:id="@+id/sendmail_mes_et"
+                style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/itim"
+                android:hint="Message"
+                android:singleLine="false" />
+
+
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/sendmail_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Send Email"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/itim"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

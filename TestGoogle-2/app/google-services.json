@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "605422382642",
+    "firebase_url": "https://testlogin-dceb2.firebaseio.com",
+    "project_id": "testlogin-dceb2",
+    "storage_bucket": "testlogin-dceb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605422382642:android:5906643ce14fc475",
+        "android_client_info": {
+          "package_name": "example.sirapob.testgoogle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605422382642-60q9106fu96gauv98tf0fqnu3o1clbhm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.sirapob.testgoogle",
+            "certificate_hash": "c4296c693618b498994a37b6f0bd966048d57686"
+          }
+        },
+        {
+          "client_id": "605422382642-69b4v0il43i22shifvv776c8e8ahu6ok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.sirapob.testgoogle",
+            "certificate_hash": "19ac14b0212ddd79f6756aa81cf88dc3c22cbddd"
+          }
+        },
+        {
+          "client_id": "605422382642-hbka8ld2i3j5sluk1thbj40iclghucsn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.sirapob.testgoogle",
+            "certificate_hash": "f358ed115330620e7b6fac3a35cc08bf4a6d8026"
+          }
+        },
+        {
+          "client_id": "605422382642-nubctvbm7dchijtaekpgrr58gkufrejv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.sirapob.testgoogle",
+            "certificate_hash": "27632b7aced2bc6f5e417c6c58fe96dc4da0301d"
+          }
+        },
+        {
+          "client_id": "605422382642-639u77qqnkc34khcd7kk2r5tluo3ljqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.sirapob.testgoogle",
+            "certificate_hash": "eb243429b6643613254e997a299436cfddc4ab30"
+          }
+        },
+        {
+          "client_id": "605422382642-pguuata57t8sbp877a4m4ble40pdqcjl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.sirapob.testgoogle",
+            "certificate_hash": "29060eb85d319cf0d0b1bff56cdcc563ca716180"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgZ4ukCdNryZ3lytXsr74XdMzdlS4mlDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605422382642-g2ej4hd86u4kfekogca349qnd570shrn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

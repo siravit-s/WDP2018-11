@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:id="@+id/news_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:text="News Name"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/pic_news"
+                android:layout_width="164dp"
+                android:layout_height="123dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/detail_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail"
+                    android:textSize="12sp"
+                    android:maxLines="6"
+                    android:fontFamily="@font/itim"
+                    />
+
+                <TextView
+                    android:id="@+id/date_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="10sp"
+                    android:textColor="#D3D3D3"
+                    android:fontFamily="@font/itim"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineV"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+</LinearLayout>

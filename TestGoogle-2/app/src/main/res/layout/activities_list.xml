@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:background="@drawable/backgroundgod"
+
+
+    >
+    <LinearLayout
+        android:id="@+id/event_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/dateSt_tv"
+        android:layout_marginLeft="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+                <TextView
+                    android:id="@+id/dateSt_tv"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="Date"
+                    android:background="@drawable/roundedrec1"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/itim"
+                android:text="Title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:singleLine="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:lottie_fileName="time.json"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:tag="Time"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true"/>
+                <TextView
+                    android:id="@+id/timeSt_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:fontFamily="@font/itim"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                   app:lottie_fileName="mapAnime2.json"
+                    android:tag="See on map"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true"/>
+                <TextView
+                    android:id="@+id/place_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Place"
+                    android:fontFamily="@font/itim"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

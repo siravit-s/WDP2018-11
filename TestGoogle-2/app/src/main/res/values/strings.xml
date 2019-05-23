@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">KKU We Do It</string>
+    <string name="loginTxt">Login</string>
+    <string name="emailTxt">Email</string>
+    <string name="logOut">Log out</string>
+    <string name="logIn">Log in</string>
+    <string name="NoneTxt" />
+    <string name="show">SHOW</string>
+    <string name="add">ADD</string>
+
+    <string-array name="credit">
+        <item>User Event</item>
+        <item>KKU Event</item>
+
+    </string-array>
+
+    <string name="header">ADD EVENT EXPLICIT</string>
+    <string name="button">Add Event!</string>
+    <string name="name">ex. โครงการทำบุญบ้านเด็กกำพร้า</string>
+    <string name="date">ex. 19/03/2562</string>
+    <string name="place">ex. อาคาร 50 ปี</string>
+    <string name="phone">ex. 080-3205554</string>
+    <string name="drawer_item_main">Main Page</string>
+    <string name="drawer_item_news">News</string>
+    <string name="drawer_item_developer">Developer</string>
+    <string name="drawer_item_login">Log in</string>
+    <string name="drawer_item_logout">Log Out</string>
+    <string name="mainpageTxt">Main Page</string>
+    <string name="newsTxt">News</string>
+    <string name="contactTxt">Contact</string>
+    <string name="aboutTxt">About</string>
+    <string name="logoutTxt">Log Out</string>
+    <string name="loginTxt2">Log in</string>
+    <string name="guessLoginTxt">Continue with Guess</string>
+
+    <string name="JAN">JAN</string>
+    <string name="FEB">FEB</string>
+    <string name="MAR">MAR</string>
+    <string name="APR">APR</string>
+    <string name="MAY">MAY</string>
+    <string name="JUN">JUN</string>
+    <string name="JUL">JUL</string>
+    <string name="AUG">AUG</string>
+    <string name="SEP">SEP</string>
+    <string name="OCT">OCT</string>
+    <string name="NOV">NOV</string>
+    <string name="DEC">DEC</string>
+</resources>

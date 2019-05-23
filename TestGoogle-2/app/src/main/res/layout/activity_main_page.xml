@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageActivity"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:id="@+id/toolbarMain"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/sn_event"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_rounded"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/name_cag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sn_event"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/palanquin_dark"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+            <com.baoyz.widget.PullRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:refreshType="smartisan"
+                >
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />
+                <!-- ListView、ScrollView、RecyclerView、Other -->
+            </com.baoyz.widget.PullRefreshLayout>
+
+
+            <!--<Button-->
+                <!--android:id="@+id/add_ev"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Add Event"/>-->
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/name_cag"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="120dp"-->
+                        <!--android:layout_height="120dp"-->
+                        <!--android:background="@drawable/tv_rounded"-->
+                        <!--android:fontFamily="sans-serif-thin"-->
+                        <!--android:text="08     JAN"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="40sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--/>-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingLeft="30dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--&gt;-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/eventName"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:fontFamily="@font/itim"-->
+                            <!--android:text="FIRST EVENT"-->
+                            <!--android:textColor="@color/oneCld"-->
+                            <!--android:textSize="25sp"-->
+                            <!--android:layout_alignParentTop="true"-->
+
+                            <!--/>-->
+                        <!--<ImageButton-->
+                            <!--android:id="@+id/favouriteIB"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/eventName"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:src="@drawable/star"-->
+                            <!--android:background="@null"-->
+                            <!--/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/timeTV"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/eventName"-->
+                            <!--android:layout_alignBaseline="@+id/favouriteIB"-->
+                            <!--android:layout_toRightOf="@+id/favouriteIB"-->
+                            <!--android:text="17:00-20:00"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:textColor="@color/oneCld"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:paddingLeft="10dp"/>-->
+
+                        <!--<ImageButton-->
+                            <!--android:id="@+id/locationIB"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/eventName"-->
+                            <!--android:layout_toRightOf="@+id/timeTV"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:src="@drawable/location"-->
+                            <!--android:paddingLeft="10dp"-->
+                            <!--android:background="@null"-->
+                            <!--/>-->
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginTop="20dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="120dp"-->
+                        <!--android:layout_height="120dp"-->
+                        <!--android:background="@drawable/tv_rounded2"-->
+                        <!--android:fontFamily="sans-serif-thin"-->
+                        <!--android:text="18     FEB"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="40sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--/>-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingLeft="30dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--&gt;-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/eventName2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:fontFamily="@font/itim"-->
+                            <!--android:text="SECOND EVENT"-->
+                            <!--android:textColor="@color/twoCld"-->
+                            <!--android:textSize="25sp"-->
+                            <!--android:layout_alignParentTop="true"-->
+
+                            <!--/>-->
+                        <!--<ImageButton-->
+                            <!--android:id="@+id/favouriteIB2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/eventName2"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:src="@drawable/star"-->
+                            <!--android:background="@null"-->
+                            <!--/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/timeTV2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/eventName2"-->
+                            <!--android:layout_alignBaseline="@+id/favouriteIB2"-->
+                            <!--android:layout_toRightOf="@+id/favouriteIB2"-->
+                            <!--android:text="17:00-20:00"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:textColor="@color/oneCld"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:paddingLeft="10dp"/>-->
+
+                        <!--<ImageButton-->
+                            <!--android:id="@+id/locationIB2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/eventName2"-->
+                            <!--android:layout_toRightOf="@+id/timeTV2"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:src="@drawable/location"-->
+                            <!--android:paddingLeft="10dp"-->
+                            <!--android:background="@null"-->
+                            <!--/>-->
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginTop="20dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="120dp"-->
+                        <!--android:layout_height="120dp"-->
+                        <!--android:background="@drawable/tv_rounded3"-->
+                        <!--android:fontFamily="sans-serif-thin"-->
+                        <!--android:text="19     MAR"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="40sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--/>-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingLeft="30dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--&gt;-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/eventName3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:fontFamily="@font/itim"-->
+                            <!--android:text="THIRD EVENT"-->
+                            <!--android:textColor="@color/threeCld"-->
+                            <!--android:textSize="30sp"-->
+                            <!--android:layout_alignParentTop="true"-->
+
+                            <!--/>-->
+                        <!--<ImageButton-->
+                            <!--android:id="@+id/favouriteIB3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/eventName3"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:src="@drawable/star"-->
+                            <!--android:background="@null"-->
+                            <!--/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/timeTV3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/eventName3"-->
+                            <!--android:layout_alignBaseline="@+id/favouriteIB3"-->
+                            <!--android:layout_toRightOf="@+id/favouriteIB3"-->
+                            <!--android:text="17:00-20:00"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:textColor="@color/oneCld"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:paddingLeft="10dp"/>-->
+
+                        <!--<ImageButton-->
+                            <!--android:id="@+id/locationIB3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/eventName3"-->
+                            <!--android:layout_toRightOf="@+id/timeTV3"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:src="@drawable/location"-->
+                            <!--android:paddingLeft="10dp"-->
+                            <!--android:background="@null"-->
+                            <!--/>-->
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/nameTV"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/fontsize"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:freezesText="true"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/dateTV"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/nameTV"-->
+                <!--android:textSize="@dimen/fontsize"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:freezesText="true" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/placeTV"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/dateTV"-->
+                <!--android:textSize="@dimen/fontsize"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:freezesText="true" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/phoneTV"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/placeTV"-->
+                <!--android:textSize="@dimen/fontsize"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:freezesText="true" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_marginStart="0dp"-->
+                <!--android:layout_marginTop="0dp">-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/add_event"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:layout_marginBottom="16dp"-->
+                    <!--android:background="@null"-->
+                    <!--android:src="@drawable/plus" />-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/white"/>
+
+</android.support.v4.widget.DrawerLayout>

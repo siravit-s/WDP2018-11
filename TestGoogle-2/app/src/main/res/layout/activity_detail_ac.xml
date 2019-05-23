@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailAcActivity"
+        android:orientation="vertical"
+        android:background="@drawable/welcome">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/toolbarMain"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        android:fontFamily="@font/itim"/>
+    <ScrollView
+        android:layout_below="@id/toolbarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/toolbarMain"
+            android:id="@+id/firstLinear"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/img_ivDe"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="32dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/title_etDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/itim"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/timeStTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time : "
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/itim"
+                        android:textSize="24dp"/>
+                    <TextView
+                        android:id="@+id/timeSt_etDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/itim"
+                        android:textSize="24dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/placeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Place : "
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/itim"
+                        android:textSize="24dp"/>
+                    <TextView
+                        android:id="@+id/place_etDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Place"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/itim"
+                        android:textSize="24dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dateStTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/itim"
+                        android:text="Date Start : "
+                        android:textColor="@color/primary"
+                        android:textSize="24dp" />
+                    <TextView
+                        android:id="@+id/dateSt_etDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date Start"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/itim"
+                        android:textSize="24dp"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/dateEnTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date End : "
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/itim"
+                        android:textSize="24dp"/>
+                    <TextView
+                        android:id="@+id/dateEn_etDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date End"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/itim"
+                        android:textSize="24dp"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/descTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/itim"
+                        android:text="Description : "
+                        android:textColor="@color/primary"
+                        android:textSize="24dp"/>
+                    <TextView
+                        android:id="@+id/desc_etDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/itim"
+                        android:textSize="24dp"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/joinTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/itim"
+                        android:text="Participants : "
+                        android:textColor="@color/primary"
+                        android:textSize="24dp"/>
+                    <TextView
+                        android:id="@+id/joinText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/itim"
+                        android:textSize="24dp"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbarMain"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/addCalendar_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="30dp"
+                    app:lottie_fileName="calendarAnime.json"
+                    android:tag="Add to Calendar"
+                    android:layout_marginLeft="40dp"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true"/>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/google_map"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="30dp"
+                    app:lottie_fileName="mapAnime.json"
+                    android:tag="See on map"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+    </RelativeLayout>
